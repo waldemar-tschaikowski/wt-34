@@ -1,0 +1,57 @@
+{
+	 "config": {
+        	"secure-http": false
+	 },
+	"repositories": [
+		{
+			"type": "pear",
+			"url": "http://pear.php.net"
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "statsvn/statsvn",
+				"version": "0.7.0",
+				"dist": {
+					"url": "http://192.168.203.48/downloads/statsvn-0.7.0.zip",
+					"type": "zip"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "saxon/saxon-he",
+				"version": "9.7.0.14",
+				"dist": {
+					"url": "http://192.168.203.48/downloads/SaxonHE9-7-0-14J.zip",
+					"type": "zip"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "plantuml/plantuml",
+				"version": "0.0.8053",
+				"dist": {
+					"url": "http://192.168.203.48/downloads/plantuml.8053.zip",
+					"type": "zip"
+				}
+			}
+		}
+	],
+	"require-dev": {
+		"silex/silex": "~2.0",
+		"phpunit/phpunit": "~5.4",
+		"mikey179/vfsStream": "^1.6"
+	},
+	"autoload": {
+		"psr-0": {
+			"App\\": ""
+		}
+	},
+	"autoload-dev": {
+		"psr-0": {"App\\": "tests/"}
+	}
+}
